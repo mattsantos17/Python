@@ -1,0 +1,13 @@
+# Below i have created a tip calculator using python: 
+
+print('Welcome to your one and only tip calculator! ')
+str_total_bill = input('How much was the total Bill? $')
+str_tip = input('How much tip do you want to leave? "(Enter percentage amount as a whole number)" ')
+bill = float(str_total_bill)
+tip = int(str_tip) / 100 
+tip_amount = bill*tip
+str_people = input('How many people are paying? ')
+people = int(str_people)
+total_amount = tip_amount+bill
+amount_per = round(total_amount / people,2)
+print(f'Each person must pay {amount_per}' )
